@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    
+    <!-- Homepage - Highest Priority -->
+    <url>
+        <loc>https://www.chumankozo.co.za/</loc>
+        <lastmod>2026-03-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Main Pages -->
+    <url>
+        <loc>https://www.chumankozo.co.za/about-chuma-nkonzo.html</loc>
+        <lastmod>2026-03-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.chumankozo.co.za/services-offered-by-chuma-nkonzo.html</loc>
+        <lastmod>2026-03-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.chumankozo.co.za/service-details/service-details.html</loc>
+        <lastmod>2026-03-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.chumankozo.co.za/service-details/services-details-two.html</loc>
+        <lastmod>2026-03-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.chumankozo.co.za/service-details/mission-vision-history.html</loc>
+        <lastmod>2026-03-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Gallery -->
+    <url>
+        <loc>https://www.chumankozo.co.za/chuma-nkonzo-gallery.html</loc>
+        <lastmod>2026-03-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Articles & Blog -->
+    <url>
+        <loc>https://www.chumankozo.co.za/chuma-nkonzo-articles.html</loc>
+        <lastmod>2026-03-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.chumankozo.co.za/articles-and-news/blog-details.html</loc>
+        <lastmod>2026-03-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Company Information -->
+    <url>
+        <loc>https://www.chumankozo.co.za/chuma-nkonzo-coperative-limited-cape-town.html</loc>
+        <lastmod>2026-03-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Contact & Appointments -->
+    <url>
+        <loc>https://www.chumankozo.co.za/contact-chuma-nkonzo.html</loc>
+        <lastmod>2026-03-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.chumankozo.co.za/appointment.html</loc>
+        <lastmod>2026-03-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Careers -->
+    <url>
+        <loc>https://www.chumankozo.co.za/careers-at-chuma-nkonzo-limited.html</loc>
+        <lastmod>2026-03-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Legal Pages -->
+    <url>
+        <loc>https://www.chumankozo.co.za/privacy/privacy-policy.html</loc>
+        <lastmod>2026-03-09</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.chumankozo.co.za/privacy/terms-conditions.html</loc>
+        <lastmod>2026-03-09</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+</urlset>

@@ -1,21 +1,30 @@
-<table style="border-collapse: collapse; width: 681px; height: 222px; border-style: hidden; background-color: #fff;" cellspacing="0" cellpadding="0">
-    <tbody>
-        <tr style="height: 162px;">
-        <td style="width: 226.172px; vertical-align: top; height: 162px;"><span style="font-family: 'andale mono', monospace;"><img style="width: 224px; height: 149px; display: block; object-fit: contain;" src="https://ctblackpros.co.za/logo-abuela.png" alt="Abuela Holdings Logo"></span></td>
-        <td style="border-left: 2px solid #2a8c6a; padding-left: 15px; height: 162px; width: 435.906px;">
-        <div class="text-dark" style="font-size: 16px; font-weight: bold; color: #222;"><span style="font-family: arial, helvetica, sans-serif;">FB Mahlatji</span></div>
-        <div style="margin-bottom: 10px; font-size: 13px; color: #2a8c6a; font-weight: bold;"><span style="font-family: arial, helvetica, sans-serif;">Managing Director/Senior Geologist</span></div>
-        <div class="text-dark" style="margin-top: 6px; font-size: 18px; font-weight: bold; color: #222;"><span style="font-family: arial, helvetica, sans-serif;">Abuela Holdings (Pty) Ltd</span></div>
-        <div class="text-muted" style="color: #555; margin-top: 3px;"><span style="font-family: arial, helvetica, sans-serif;">Quality Reliable Services</span></div>
-        <div class="text-dark" style="margin-top: 10px; color: #222;"><span style="font-family: arial, helvetica, sans-serif; font-size: 11pt;"><strong>Phone:</strong> +27 72 943 1461</span></div>
-        <div class="text-dark" style="color: #222;"><span style="font-family: arial, helvetica, sans-serif; font-size: 11pt;"><strong>Email:</strong> <a style="color: #2a8c6a; text-decoration: none;" href="mailto:info@abuelaholdings.co.za"> info@abuelaholdings.co.za </a></span></div>
-        <div class="text-dark" style="color: #222;"><span style="font-family: arial, helvetica, sans-serif; font-size: 11pt;"><strong>Website:</strong> <a style="color: #2a8c6a; text-decoration: none;" href="https://www.abuelaholdings.co.za"> www.abuelaholdings.co.za</a></span></div>
-        <div class="text-dark" style="color: #222;"><span style="font-family: arial, helvetica, sans-serif;"><strong>Address</strong>: <span style="color: #2a8c6a; font-size: 11pt;">26 Van Rensburg St, Urban Cove Complex, Nelspruit</span></span></div>
-        <div style="margin-top: 10px;"><span style="font-family: arial, helvetica, sans-serif;"><a style="text-decoration: none; margin-right: 10px;"> </a> <a style="text-decoration: none; margin-right: 10px;"> </a> <a style="text-decoration: none; margin-right: 10px;"> </a> <a style="text-decoration: none;"> </a></span></div>
-        </td>
-        </tr>
-        <tr style="height: 14px;">
-            <td class="text-muted" style="padding: 15px; font-size: 12px; color: #777777; height: 14px; width: 651px;" colspan="2"><span style="font-family: 'andale mono', monospace;"><strong>DISCLAIMER:</strong> This email and any attachments are confidential and intended only for the recipient.</span></td>
-        </tr>   
-    </tbody>
-</table>
+# Robots.txt for Chuma Nkozo Co-operative Limited
+# https://www.chumankozo.co.za
+
+# Allow all search engines to crawl the site
+User-agent: *
+Allow: /
+
+# Disallow sensitive directories (if any)
+# Disallow: /admin/
+# Disallow: /private/
+# Disallow: /temp/
+
+# Crawl delay (optional - adjust if needed)
+# Crawl-delay: 1
+
+# Request rate (optional)
+# Request-rate: 30/60
+
+# Sitemap location
+Sitemap: https://www.chumankozo.co.za/sitemap.xml
+
+# Specific rules for Googlebot (optional optimization)
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Specific rules for Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
