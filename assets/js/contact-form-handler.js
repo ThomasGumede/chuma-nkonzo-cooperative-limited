@@ -28,7 +28,7 @@ function handleFormSubmit(e) {
 
   // Get reCAPTCHA token
   grecaptcha
-    .execute("YOUR_RECAPTCHA_SITE_KEY_HERE", { action: "submit" })
+    .execute("6LdvyIQsAAAAAGPo_FR2mENa_xYM_iZnoCIPf5J7", { action: "submit" })
     .then(function (token) {
       sendFormData(form, token);
     });

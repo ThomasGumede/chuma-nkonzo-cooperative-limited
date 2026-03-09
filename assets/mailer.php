@@ -8,7 +8,7 @@ ini_set('log_errors', 1);
 header('Content-Type: application/json');
 
 // reCAPTCHA Secret Key (Replace with your actual key)
-define('RECAPTCHA_SECRET_KEY', 'YOUR_RECAPTCHA_SECRET_KEY_HERE');
+define('RECAPTCHA_SECRET_KEY', '6LdvyIQsAAAAACxwNajfPgCjrAn5drImgeS4XQmV');
 
 // Email configuration
 define('RECIPIENT_EMAIL', 'info@chumankonzo.co.za');
