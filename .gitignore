@@ -3,3 +3,6 @@ analyze.py
 fast_analyze.py
 analysis_output.log
 UNUSED_CSS_ANALYSIS.md
+./docs
+docs
+/docs
