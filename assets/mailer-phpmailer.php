@@ -20,11 +20,11 @@ header('Content-Type: application/json');
 // ============================================================================
 
 // reCAPTCHA Secret Key (Replace with your actual key)
-define('RECAPTCHA_SECRET_KEY', '6LdvyIQsAAAAACxwNajfPgCjrAn5drImgeS4XQmV');
+define('RECAPTCHA_SECRET_KEY', '6LcdQ7IsAAAAADqJ_iWlKxNzJHiUQ_oQU3rlDCAj');
 
 // Email configuration
-define('RECIPIENT_EMAIL', 'info@chumankonzo.co.za');
-define('MAIL_FROM', 'noreply@chumankonzo.co.za');
+define('RECIPIENT_EMAIL', 'gumedethomas12@gmail.com');
+define('MAIL_FROM', 'noreply@chumankozo.co.za');
 define('MAIL_FROM_NAME', 'Chuma Nkozo Cooperative');
 
 /**
@@ -38,10 +38,10 @@ define('MAIL_FROM_NAME', 'Chuma Nkozo Cooperative');
  */
 $smtp_config = array(
     'enabled' => false,                      // Set to true to use SMTP
-    'host' => 'smtp.gmail.com',              // SMTP server
+    'host' => 'mail.chumankozo.co.za',              // SMTP server
     'port' => 587,                           // Port: 587 for TLS, 465 for SSL
-    'username' => 'your-email@gmail.com',    // SMTP username
-    'password' => 'your-app-password',       // SMTP password
+    'username' => 'noreply@chumankozo.co.za',    // SMTP username
+    'password' => 'Chuma.Safe@2026',       // SMTP password
     'encryption' => 'tls'                    // 'tls', 'ssl', or empty
 );
 
@@ -273,7 +273,7 @@ try {
             <p>If you have any questions, contact us at:</p>
             <ul>
                 <li><strong>Phone:</strong> +27 78 819 3379</li>
-                <li><strong>Email:</strong> info@chumankonzo.co.za</li>
+                <li><strong>Email:</strong> gumedethomas12@gmail.com</li>
             </ul>
             <p>Best regards,<br>Chuma Nkozo Team</p>
         </div>

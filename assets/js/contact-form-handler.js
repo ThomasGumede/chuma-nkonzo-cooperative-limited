@@ -27,12 +27,23 @@ function handleFormSubmit(e) {
   }
 
   // Get reCAPTCHA token
-  grecaptcha
-    .execute("6LdvyIQsAAAAAGPo_FR2mENa_xYM_iZnoCIPf5J7", { action: "submit" })
-    .then(function (token) {
-      sendFormData(form, token);
-    });
+  // grecaptcha.enterprise
+  //   .execute("6LcdQ7IsAAAAAD4K_NPiB7qdE2Z--6KwVBLZIynC", { action: "submit" })
+  //   .then(function (token) {
+  //     sendFormData(form, token);
+  //   });
+  grecaptcha.enterprise.ready(async () => {
+    const token = await grecaptcha.enterprise.execute(
+      "6LcdQ7IsAAAAAD4K_NPiB7qdE2Z--6KwVBLZIynC",
+      {
+        action: "submit",
+      },
+    );
+    sendFormData(form, token);
+  });
 }
+
+
 
 function validateForm(name, email, phone, message) {
   // Check required fields

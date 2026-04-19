@@ -17,11 +17,11 @@ header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST');
 
 // Your Google reCAPTCHA Secret Key
-$recaptcha_secret = '6LdvyIQsAAAAACxwNajfPgCjrAn5drImgeS4XQmV'; // Replace with your actual secret key
+$recaptcha_secret = '6LcdQ7IsAAAAADqJ_iWlKxNzJHiUQ_oQU3rlDCAj'; // Replace with your actual secret key
 
 // Email configuration
-$to_email = 'info@chumankonzo.co.za';
-$from_email = 'noreply@chumankonzo.co.za';
+$to_email = 'gumedethomas12@gmail.com';
+$from_email = 'noreply@chumankozo.co.za';
 
 // Response array
 $response = [
@@ -299,7 +299,7 @@ try {
             <p>If you have any questions, please contact us at:</p>
             <ul>
                 <li><strong>Phone:</strong> +27 78 819 3379</li>
-                <li><strong>Email:</strong> info@chumankonzo.co.za</li>
+                <li><strong>Email:</strong> gumedethomas12@gmail.com</li>
             </ul>
         </div>
         

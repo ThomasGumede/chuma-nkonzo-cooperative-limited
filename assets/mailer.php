@@ -8,11 +8,11 @@ ini_set('log_errors', 1);
 header('Content-Type: application/json');
 
 // reCAPTCHA Secret Key (Replace with your actual key)
-define('RECAPTCHA_SECRET_KEY', '6LdvyIQsAAAAACxwNajfPgCjrAn5drImgeS4XQmV');
+define('RECAPTCHA_SECRET_KEY', '6LcdQ7IsAAAAADqJ_iWlKxNzJHiUQ_oQU3rlDCAj');
 
 // Email configuration
-define('RECIPIENT_EMAIL', 'info@chumankonzo.co.za');
-define('MAIL_FROM', 'noreply@chumankonzo.co.za');
+define('RECIPIENT_EMAIL', 'gumedethomas12@gmail.com');
+define('MAIL_FROM', 'noreply@chumankozo.co.za');
 
 // Response array
 $response = array(

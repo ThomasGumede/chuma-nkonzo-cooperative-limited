@@ -24,11 +24,11 @@ header('Access-Control-Allow-Methods: POST');
 // ============================================================================
 
 // Your Google reCAPTCHA Secret Key
-$recaptcha_secret = '6LdvyIQsAAAAACxwNajfPgCjrAn5drImgeS4XQmV'; // Replace with your actual secret key
+$recaptcha_secret = '6LcdQ7IsAAAAADqJ_iWlKxNzJHiUQ_oQU3rlDCAj'; // Replace with your actual secret key
 
 // Email configuration
-$to_email = 'info@chumankonzo.co.za';           // Admin email (receives appointments)
-$from_email = 'noreply@chumankonzo.co.za';      // From email address
+$to_email = 'gumedethomas12@gmail.com';           // Admin email (receives appointments)
+$from_email = 'noreply@chumankozo.co.za';      // From email address
 $from_name = 'Chuma Nkozo Cooperative';         // From name
 
 /**
@@ -42,10 +42,10 @@ $from_name = 'Chuma Nkozo Cooperative';         // From name
  */
 $smtp_config = [
     'enabled' => false,                         // Set to true to use SMTP
-    'host' => 'smtp.chumankonzo.co.za',                 // SMTP server
+    'host' => 'mail.chumankozo.co.za',                 // SMTP server
     'port' => 587,                              // Port: 587 for TLS, 465 for SSL
-    'username' => 'your-email@chumankonzo.co.za',       // SMTP username
-    'password' => 'your-app-password',          // SMTP password
+    'username' => 'noreply@chumankozo.co.za',       // SMTP username
+    'password' => 'Chuma.Safe@2026',          // SMTP password
     'encryption' => 'tls'                       // 'tls', 'ssl', or empty
 ];
 
@@ -330,7 +330,7 @@ try {
             <p>If you have any questions, please contact us at:</p>
             <ul>
                 <li><strong>Phone:</strong> +27 78 819 3379</li>
-                <li><strong>Email:</strong> info@chumankonzo.co.za</li>
+                <li><strong>Email:</strong> gumedethomas12@gmail.com</li>
             </ul>
         </div>
         

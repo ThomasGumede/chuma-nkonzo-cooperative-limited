@@ -5,11 +5,11 @@
     /* Windows Load */
     $(window).on('load', function () {
         // Preloader Activation
-        $("#pre-load").delay(600).fadeOut(500);
-        $(".pre-loader").delay(600).fadeOut(500);
+        // $("#pre-load").delay(600).fadeOut(500);
+        // $(".pre-loader").delay(600).fadeOut(500);
 
         // Wow Animation Init
-        wowAnimation();
+        // wowAnimation();
     });
 
     // rtl setting start
@@ -65,44 +65,7 @@
         $(this).css("background-color", $(this).attr("data-bg-color"));
     });
 
-    /* MagnificPopup image view */
-    $(".popup-image").magnificPopup({
-        type: "image",
-        gallery: {
-            enabled: true,
-        },
-    });
-
-    /* Nice Select Js */
-    $("select").niceSelect();
-
-    /* MagnificPopup video view */
-    $(".popup-video").magnificPopup({
-        type: "iframe",
-    });
-
-    /* pricing switcher */
-    $('.pricing-switcher-wrapper span').on('click', function () {
-        $('.rs-pricing-switcher').toggleClass('switched');
-        $('.rs-pricing-switcher').addClass('switching');
-        setTimeout(() => {
-            $('.rs-pricing-switcher').removeClass('switching');
-        }, 50);
-    });
-
-    // date picker
-    flatpickr("#rs-date", {
-    dateFormat: "F j, Y"
-    });
-
-
-    // time picker
-    flatpickr("#rs-time", {
-    enableTime: true,
-    noCalendar: true, 
-    dateFormat: "h:i K",
-    time_24hr: false
-    });
+    
 
 
     // hover item active
@@ -132,64 +95,55 @@
     });
 
     // ripple js
-    jQuery('.rs-ripple-item').each(function (index) {
-        var uniqueClass = 'rs-ripple-item-' + index;
-        jQuery(this).addClass(uniqueClass);
-        var parentHotspots = jQuery(this).closest('.rs-contact-wrapper');
-        var targetMobileItem = parentHotspots.find('.mobile_item').eq(index);
-        jQuery(this).on('click', function () {
-            if (targetMobileItem.hasClass('active')) {
-                targetMobileItem.removeClass('active');
-            } else {
-                parentHotspots.find('.mobile_item.active').removeClass('active');
-                targetMobileItem.addClass('active');
-            }
-        });
-        parentHotspots.on('click', '.remove-icon', function (event) {
-            event.stopPropagation();
-            targetMobileItem.removeClass('active');
-        });
-    });
+    // jQuery('.rs-ripple-item').each(function (index) {
+    //     var uniqueClass = 'rs-ripple-item-' + index;
+    //     jQuery(this).addClass(uniqueClass);
+    //     var parentHotspots = jQuery(this).closest('.rs-contact-wrapper');
+    //     var targetMobileItem = parentHotspots.find('.mobile_item').eq(index);
+    //     jQuery(this).on('click', function () {
+    //         if (targetMobileItem.hasClass('active')) {
+    //             targetMobileItem.removeClass('active');
+    //         } else {
+    //             parentHotspots.find('.mobile_item.active').removeClass('active');
+    //             targetMobileItem.addClass('active');
+    //         }
+    //     });
+    //     parentHotspots.on('click', '.remove-icon', function (event) {
+    //         event.stopPropagation();
+    //         targetMobileItem.removeClass('active');
+    //     });
+    // });
 
-    // Ripple Class Switching
-    var switches = jQuery('.rs-contact-wrapper .rs-ripple-item');
-    var currentIndex = 0;
-    var interval;
-    var speed = 1500;
+    // // Ripple Class Switching
+    // var switches = jQuery('.rs-contact-wrapper .rs-ripple-item');
+    // var currentIndex = 0;
+    // var interval;
+    // var speed = 1500;
 
-    function startRotation() {
-        interval = setInterval(function () {
-            switches.eq(currentIndex).removeClass('ripple');
-            currentIndex = (currentIndex + 1) % switches.length;
-            switches.eq(currentIndex).addClass('ripple');
-        }, speed);
-    }
-    function stopRotation() {
-        clearInterval(interval);
-        switches.eq(currentIndex).removeClass('ripple');
-    }
-    startRotation();
-    switches.on('mouseenter', function () {
-        stopRotation();
-    }).on('mouseleave', function () {
-        startRotation();
-    });
+    // function startRotation() {
+    //     interval = setInterval(function () {
+    //         switches.eq(currentIndex).removeClass('ripple');
+    //         currentIndex = (currentIndex + 1) % switches.length;
+    //         switches.eq(currentIndex).addClass('ripple');
+    //     }, speed);
+    // }
+    // function stopRotation() {
+    //     clearInterval(interval);
+    //     switches.eq(currentIndex).removeClass('ripple');
+    // }
+    // startRotation();
+    // switches.on('mouseenter', function () {
+    //     stopRotation();
+    // }).on('mouseleave', function () {
+    //     startRotation();
+    // });
 
 
     //===== Odometer js
-    $('.odometer').appear(function (e) {
-        var odo = $(".odometer");
-        odo.each(function () {
-            var countNumber = $(this).attr("data-count");
-            $(this).html(countNumber);
-        });
-    });
+    
 
     //search
-    $('.header-search-icon').on('click', function (event) {
-        $('.rs-stickys-form').slideToggle('show');
-        $(this).toggleClass('icon-close');
-    });
+    
 
     $(document).ready(function () {
 
@@ -424,29 +378,7 @@
         });
 
             /* pricing */
-            var mainPlan = $('.rs-pricing-area');
-            mainPlan.each(function () {
-                var yearlySelectBtn = $('.yearly-plan-btn'),
-                    monthlySelectBtn = $('.monthly-plan-btn'),
-                    monthlyPrice = $('.monthly-pricing'),
-                    yearlyPrice = $('.yearly-pricing'),
-                    buttonSlide = $('.pricing-checkbox');
-
-                $(monthlySelectBtn).on('click', function () {
-                    buttonSlide.prop('checked', true);
-                    $(this).addClass('active').parent('.rs-pricing-switcher-tab').siblings().children().removeClass('active');
-                    monthlyPrice.css('display', 'block');
-                    yearlyPrice.css('display', 'none');
-                });
-
-                $(yearlySelectBtn).on('click', function () {
-                    buttonSlide.prop('checked', false);
-                    $(this).addClass('active').parent('.rs-pricing-switcher-tab').siblings().children().removeClass('active');
-                    monthlyPrice.css('display', 'none');
-                    yearlyPrice.css('display', 'block');
-                });
-
-            });
+            
 
         /* slider-rang js */
         var slider1 = document.getElementById('slider-range'); // Changed variable name to slider1
@@ -784,38 +716,7 @@
         $(this).find('.rs-icon').css('animation', 'btnHoverEffectReverse 0.5s');
     });
 
-    // Contact Form Activation
-    var form = $('#contact-form');
-    var formMessages = $('#form-messages');
-    $(form).submit(function (e) {
-        e.preventDefault();
-        var formData = $(form).serialize();
-        $.ajax({
-            type: 'POST',
-            url: $(form).attr('action'),
-            data: formData
-        })
-            .done(function (response) {
-                $(formMessages).removeClass('error');
-                $(formMessages).addClass('success');
-                $(formMessages).text(response);
-                $('#name, #email, #message').val('');
-                if ($('#phone').length) $('#phone').val('');
-                if ($('#website').length) $('#website').val('');
-                if ($('#subject').length) $('#subject').val('');
-                if ($('#date').length) $('#date').val('');
-                if ($('#time').length) $('#time').val('');
-            })
-            .fail(function (data) {
-                $(formMessages).removeClass('success');
-                $(formMessages).addClass('error');
-                if (data.responseText !== '') {
-                    $(formMessages).text(data.responseText);
-                } else {
-                    $(formMessages).text('Oops! An error occurred and your message could not be sent.');
-                }
-            });
-    });
+    
 
 })(jQuery);
 
