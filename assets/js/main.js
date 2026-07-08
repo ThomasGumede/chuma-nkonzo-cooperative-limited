@@ -10,7 +10,26 @@
 
         // Wow Animation Init
         // wowAnimation();
+        
     });
+    function trackWhatsAppClick() {
+      // Google Analytics 4 (gtag.js)
+      if (typeof gtag !== "undefined") {
+        gtag("event", "whatsapp_click", {
+          event_category: "engagement",
+          event_label: window.location.pathname,
+          value: 1,
+        });
+      }
+
+      // Optional: Google Tag Manager fallback
+      if (typeof dataLayer !== "undefined") {
+        dataLayer.push({
+          event: "whatsapp_click",
+          page_path: window.location.pathname,
+        });
+      }
+    }
 
     // rtl setting start
     

@@ -26,21 +26,25 @@ function handleFormSubmit(e) {
     return;
   }
 
+  const recaptchaResponse = document.getElementById("g-recaptcha-response").value;
+  sendFormData(form);
+
+
   // Get reCAPTCHA token
   // grecaptcha.enterprise
   //   .execute("6LcdQ7IsAAAAAD4K_NPiB7qdE2Z--6KwVBLZIynC", { action: "submit" })
   //   .then(function (token) {
   //     sendFormData(form, token);
   //   });
-  grecaptcha.enterprise.ready(async () => {
-    const token = await grecaptcha.enterprise.execute(
-      "6LcdQ7IsAAAAAD4K_NPiB7qdE2Z--6KwVBLZIynC",
-      {
-        action: "submit",
-      },
-    );
-    sendFormData(form, token);
-  });
+  // grecaptcha.enterprise.ready(async () => {
+  //   const token = await grecaptcha.enterprise.execute(
+  //     "6LcdQ7IsAAAAAD4K_NPiB7qdE2Z--6KwVBLZIynC",
+  //     {
+  //       action: "submit",
+  //     },
+  //   );
+  //   sendFormData(form, token);
+  // });
 }
 
 
@@ -74,7 +78,7 @@ function validateForm(name, email, phone, message) {
   return true;
 }
 
-function sendFormData(form, recaptchaToken) {
+function sendFormData(form) {
   const submitBtn = form.querySelector('button[type="submit"]');
   const originalText = submitBtn.textContent;
 
@@ -85,7 +89,7 @@ function sendFormData(form, recaptchaToken) {
 
   // Prepare form data
   const formData = new FormData(form);
-  formData.append("recaptcha_token", recaptchaToken);
+  
 
   // Send AJAX request
   fetch(form.action, {
